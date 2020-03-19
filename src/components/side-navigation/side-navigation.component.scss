@@ -1,0 +1,41 @@
+// COLORS
+$primary-color: #005581;
+$active-bg-color: #f3f3f3;
+$border-color: #eaeaea;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 100vh;
+  width: 100%;
+}
+
+// NON-ACTIVE TAB
+.nav-pills .nav-link {
+  border-radius: 0;
+  padding: 10px 30px;
+  border-bottom: 1px solid $border-color;
+  transition: .2s;
+  &:hover{
+    background: $active-bg-color;
+  }
+}
+
+// ACTIVE TAB
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #333;
+  background-color: $active-bg-color;
+  padding: 10px 30px;
+  /* border-right: 2px solid royalblue; */
+  // border-bottom: 1px solid #efefef;
+}
+
+.column-container{
+  border-right: 1px solid $border-color;
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0px 0px 0px 7px;
+}
+

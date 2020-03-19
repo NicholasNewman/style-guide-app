@@ -1,0 +1,41 @@
+// @import "../scss/variables";
+
+// COLORS
+$primary-color: #005581;
+$border-color: #eaeaea;
+
+nav{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0px;
+  border-bottom: 1px solid $border-color;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    .image-container{
+      overflow: hidden;
+      width: 50px;
+      margin: 0px 10px;
+      img{
+        width: 163px;
+        height: 45px;
+      }
+    }
+    label {
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 0px 12px;
+      margin: 0px;
+      color: $primary-color;
+      border-left: 1px solid $border-color;
+    }
+  }
+}
+
+
+
