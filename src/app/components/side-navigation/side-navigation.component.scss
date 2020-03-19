@@ -2,16 +2,23 @@
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-right: -15px;
   margin-left: -15px;
   height: 100vh;
   width: 100%;
+  background: $content-bg-color;
+}
+
+.content-container{
+  width: 100%;
+  padding: 10px;
 }
 
 // NON-ACTIVE TAB
 .nav-pills .nav-link {
   border-radius: 0;
+  color: $font-color;
   padding: 10px 30px;
   border-bottom: 1px solid $border-color;
   transition: .2s;
@@ -22,10 +29,11 @@
 
 // ACTIVE TAB
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  color: #333;
+  color: $primary-color;
   background-color: $active-bg-color;
   padding: 10px 30px;
-  /* border-right: 2px solid royalblue; */
+  border-right: 2px solid $active-color;
+  // /* border-right: 2px solid royalblue; */
   // border-bottom: 1px solid #efefef;
 }
 
@@ -34,5 +42,6 @@
   flex: 0 0 25%;
   max-width: 330px;
   padding: 0px 0px 0px 7px;
+  background: $primary-bg-color;
 }
 
