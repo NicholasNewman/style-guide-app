@@ -16,3 +16,22 @@ h3{
   padding-bottom: 10px;
   border-bottom: 1px solid $border-color-darker;
 }
+
+// GLOBAL ANIMATIONS
+  .page-reveal-animation{
+    opacity: 1;
+    transform: translateX(0px);
+    animation: .3s page-show;
+
+    @keyframes page-show {
+      0%{
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  }
+

@@ -1,1 +1,35 @@
-<h3> Color Palette </h3>
+<div class="page-reveal-animation">
+  <h3> Color Palette </h3>
+  <div class="container">
+    <p> The consistent use of color is curcial to maintaining EPAS' brand. Color helps users quickly
+      identify what content they need to focus on and how to move through pages quickly.
+    </p>
+    <p>The color palette is compromised of a primary and secondary set of colors. The primary
+      set is often seen the most often and therefore is a conservative set of colors. The
+      secondary palette consists of brighter colors where specific content is emphasized.
+    </p>
+  </div>
+  <div class="container">
+    <h5>Primary Color Palette</h5>
+    <div class="container">
+      <div *ngFor="let color of primaryColorPalettes">
+        <div class="card card-dimension">
+          <div class="card-color-top" style="background: {{color.color}}">
+            <label>{{color.displayName}}</label>
+            <label>{{color.color}}</label>
+
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{color.subContentHeader}}</h5>
+            <p class="card-text">{{color.subContent}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h5>Secondary Color Palette</h5>
+  </div>
+</div>
+
+

@@ -1,0 +1,13 @@
+@import '../../../styles.scss';
+
+
+.card-dimension{
+  width: 205px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 2px 5px 1px gainsboro;
+  .card-color-top{
+    height: 160px;
+  }
+}
