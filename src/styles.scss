@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-
-$pimary-color: red;
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "./scss/index";
+$epas-pimary-color: red;
 
 body{
   overflow: hidden;

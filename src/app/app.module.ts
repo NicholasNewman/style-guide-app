@@ -6,8 +6,8 @@ import { BsDropdownModule } from 'ngx-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from '../components/header/header.component';
-import { SideNavigationComponent } from '../components/side-navigation/side-navigation.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SideNavigationComponent } from './components/side-navigation/side-navigation.component';
 
 
 @NgModule({
