@@ -2,8 +2,13 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~@fortawesome/fontawesome-free/css/all.css";
 @import "./scss/index";
+@import "./scss/variables";
 $epas-pimary-color: red;
 
 body{
   overflow: hidden;
+}
+
+h3{
+  color: $font-color;
 }
