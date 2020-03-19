@@ -6,4 +6,7 @@ export class Tabs {
   order: number;
   area: string;
   etc: any;
+  href: string;
+  active: boolean;
+  icon: string;
 }
