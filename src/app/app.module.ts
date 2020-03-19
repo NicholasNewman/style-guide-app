@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SideNavigationComponent } from './components/side-navigation/side-navigation.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ColorPalettePageComponent } from './pages/color-palette-page/color-palette-page.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomeComponent } from './pages/home/home.component';
     AppComponent,
     HeaderComponent,
     SideNavigationComponent,
-    HomeComponent
+    HomeComponent,
+    ColorPalettePageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { $ } from 'protractor';
 import { Tabs } from '../../models/tabs/tabs.model';
+import { Routes, RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-side-navigation',
   templateUrl: './side-navigation.component.html',
@@ -9,9 +11,9 @@ import { Tabs } from '../../models/tabs/tabs.model';
 export class SideNavigationComponent implements OnInit {
 
   tabs: Tabs [] = [
-    {id: 1, displayName: ' Home ', toolTip: '', display: true, order: 1, area: 'home', etc: '', href: 'home',
+    {id: 1, displayName: ' Home ', toolTip: '', display: true, order: 1, area: 'home', etc: '', href: '/',
     active: true, icon: 'fas fa-home'},
-    {id: 2, displayName: 'Color Palette', toolTip: 'test', display: true, order: 2, area: 'foundation', etc: '', href: 'color-palette',
+    {id: 2, displayName: 'Color Palette', toolTip: 'test', display: true, order: 2, area: 'foundation', etc: '', href: '/color-palette',
     active: false, icon: 'fas fa-palette'},
     {id: 3, displayName: 'Typography', toolTip: 'test', display: true, order: 3, area: 'foundation', etc: '', href: 'typography',
     active: false, icon: 'fas fa-font'},
