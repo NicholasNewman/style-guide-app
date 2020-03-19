@@ -1,3 +1,7 @@
+GIT
+lando/style-guide-app
+https://github.com/lando101/style-guide-app
+
 DEPLOY TO AWS
 ng build  && npm run aws-deploy
 
