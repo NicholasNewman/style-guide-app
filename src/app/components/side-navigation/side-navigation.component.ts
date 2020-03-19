@@ -15,11 +15,11 @@ export class SideNavigationComponent implements OnInit {
     active: true, icon: 'fas fa-home'},
     {id: 2, displayName: 'Color Palette', toolTip: 'test', display: true, order: 2, area: 'foundation', etc: '', href: '/color-palette',
     active: false, icon: 'fas fa-palette'},
-    {id: 3, displayName: 'Typography', toolTip: 'test', display: true, order: 3, area: 'foundation', etc: '', href: 'typography',
+    {id: 3, displayName: 'Typography', toolTip: 'test', display: true, order: 3, area: 'foundation', etc: '', href: '/typography',
     active: false, icon: 'fas fa-font'},
-    {id: 4, displayName: 'Forms', toolTip: 'test', display: true, order: 4, area: 'foundation', etc: '', href: 'forms',
+    {id: 4, displayName: 'Forms', toolTip: 'test', display: true, order: 4, area: 'foundation', etc: '', href: '/forms',
     active: false, icon: 'far fa-newspaper'},
-    {id: 5, displayName: 'Buttons', toolTip: 'test', display: true, order: 5, area: 'foundation', etc: '', href: 'buttons',
+    {id: 5, displayName: 'Buttons', toolTip: 'test', display: true, order: 5, area: 'foundation', etc: '', href: '/buttons',
     active: false, icon: 'fas fa-mouse'},
   ];
 

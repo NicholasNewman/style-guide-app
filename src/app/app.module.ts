@@ -10,6 +10,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { SideNavigationComponent } from './components/side-navigation/side-navigation.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ColorPalettePageComponent } from './pages/color-palette-page/color-palette-page.component';
+import { TypographyPageComponent } from './pages/typography-page/typography-page.component';
+import { FormsPageComponent } from './pages/forms-page/forms-page.component';
+import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { ColorPalettePageComponent } from './pages/color-palette-page/color-pale
     HeaderComponent,
     SideNavigationComponent,
     HomeComponent,
-    ColorPalettePageComponent
+    ColorPalettePageComponent,
+    TypographyPageComponent,
+    FormsPageComponent,
+    ButtonsPageComponent
   ],
   imports: [
     BrowserModule,
