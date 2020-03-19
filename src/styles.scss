@@ -11,4 +11,8 @@ body{
 
 h3{
   color: $font-color;
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $border-color-darker;
 }

@@ -1,4 +1,5 @@
 @import '../../../scss/variables';
+@import '../../../styles.scss';
 
 
 .carousel {
@@ -8,4 +9,13 @@
   min-height: 450px;
   background: $carousel-bg-color;
   box-shadow: 1px 3px 5px 1px $default-shadow;
+}
+
+.carousel-direction{
+  width: 2.75%;
+  background: $carousel-button-bg-color;
+}
+
+.carousel-indicators-color{
+  background-color: #b5b5b5 !important;
 }
