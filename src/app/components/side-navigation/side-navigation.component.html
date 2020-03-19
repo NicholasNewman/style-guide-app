@@ -6,7 +6,7 @@
         Home
       </a> -->
       <a *ngFor="let tab of tabs" (click)="setActiveTab(tab)" [ngClass]="{'active': tab.active}" data-toggle="pill" class="nav-link " id="tab.id" href="tab.href" role="tab" aria-controls="v-pills-home" aria-selected="tab.active">
-        <i class="fas {{tab.icon}}"></i>
+        <i class="{{tab.icon}}"></i>
         {{tab.displayName}}
       </a>
       <!-- <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Color Palettes</a>
