@@ -80,23 +80,25 @@ export class ColorPalettePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // COPY COLOR TO USER CLIPBOARD
-  copyHex(color: string){
-    const selBox = document.createElement('textarea');
-    selBox.style.position = 'fixed';
-    selBox.style.left = '0';
-    selBox.style.top = '0';
-    selBox.style.opacity = '0';
-    selBox.value = color;
-    document.body.appendChild(selBox);
-    selBox.focus();
-    selBox.select();
-    document.execCommand('copy');
-    document.body.removeChild(selBox);
-
-    this.copiedColorHex = color;
-    setTimeout(() => {
-      this.copiedColorHex = '';
-    }, 2000);
+  // COPY COLOR TO USER CLIPBOARD & ANIMATE
+  copyHex(color: string) {
+    try {
+      const selBox = document.createElement('textarea');
+      selBox.style.position = 'fixed';
+      selBox.style.left = '0';
+      selBox.style.top = '0';
+      selBox.style.opacity = '0';
+      selBox.value = color;
+      document.body.appendChild(selBox);
+      selBox.focus();
+      selBox.select();
+      document.execCommand('copy');
+      document.body.removeChild(selBox);
+      this.copiedColorHex = color;
+      setTimeout(() => {
+        this.copiedColorHex = '';
+      }, 2000);
+    } catch (error) {
+    }
   }
 }
