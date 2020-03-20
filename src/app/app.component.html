@@ -1,6 +1,13 @@
-<app-header></app-header>
-
-<app-side-navigation></app-side-navigation>
+<div *ngIf="auth.user | async as user; else showLogin">
+    <app-header></app-header>
+    <app-side-navigation></app-side-navigation>
+</div>
+<ng-template #showLogin>
+    <h2>Enter your email address and password.</h2>
+    <input #email name="email" type="text" class="form-control" placeholder="email" />
+    <input #pw type = "text" name="password" class="form-control" placeholder="password" />
+    <button (click)="login(email.value, pw.value)">Sign In</button>
+</ng-template>
 
 <!-- <router-outlet></router-outlet> -->
 
