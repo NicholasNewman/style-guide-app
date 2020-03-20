@@ -6,7 +6,7 @@
 $epas-pimary-color: red;
 
 body{
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 h3{
@@ -23,6 +23,10 @@ h3{
 
 .sub-section-container{
   margin: 15px 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 // GLOBAL ANIMATIONS

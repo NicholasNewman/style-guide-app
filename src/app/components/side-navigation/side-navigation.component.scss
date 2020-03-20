@@ -7,19 +7,29 @@
   width: 100%;
   margin: 0px;
   background: $content-bg-color;
+  position: fixed;
+  top: 55px;
 }
 
 .content-container{
   width: 100%;
   padding: 0px 80px;
+  margin: 0px 0px 55px 0px;
   overflow-y: auto;
   display: flex;
   justify-content: center;
   background: $primary-bg-color;
-  .tab-content{
+  .tab-content-outer-container{
     max-width: 1140px;
-    padding: 20px 15px;
+    width: 95%;
     background: $tab-content-bg-color;
+    .tab-content-inner-container{
+      width: 100%;
+      // margin: 0px 0px 55px 0px;
+      padding: 20px 15px;
+      background: $tab-content-bg-color;
+      overflow-y: auto;
+    }
   }
 }
 

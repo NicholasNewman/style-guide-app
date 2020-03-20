@@ -1,7 +1,7 @@
 <div class="page-reveal-animation">
   <h3> Color Palette </h3>
   <div class="container">
-    <p> The consistent use of color is curcial to maintaining EPAS' brand. Color helps users quickly
+    <p> The consistent use of color is curcial to maintaining the EPAS brand. Color helps users quickly
       identify what content they need to focus on and how to move through pages quickly.
     </p>
     <p>The color palette is compromised of a primary and secondary set of colors. The primary
@@ -16,7 +16,11 @@
         <div class="card card-dimension">
           <div class="card-color-top" style="background: {{color.color}}; color: {{color.textColor}}">
             <div>{{color.displayName}}</div>
-            <div>{{color.color}}</div>
+            <div class="color-label">{{color.color}}</div>
+            <div class="copy-color" (click)="copyHex(color.color)" >
+              <i class="far fa-copy"></i>
+              Copy HEX
+            </div>
           </div>
           <div class="card-body">
             <h5 class="card-title">{{color.subContentHeader}}</h5>
@@ -27,7 +31,25 @@
     </div>
   </div>
   <div class="section-container container">
-    <h5>Secondary Color Palette</h5>
+    <h5>Secondary Color Palette (Areas)</h5>
+    <div class="sub-section-container container">
+      <div *ngFor="let color of secondaryColorPalette">
+        <div class="card card-dimension">
+          <div class="card-color-top" style="background: {{color.color}}; color: {{color.textColor}}">
+            <div>{{color.displayName}}</div>
+            <div class="color-label">{{color.color}}</div>
+            <div class="copy-color" (click)="copyHex(color.color)" >
+              <i class="far fa-copy"></i>
+              Copy HEX
+            </div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{color.subContentHeader}}</h5>
+            <p class="card-text">{{color.subContent}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

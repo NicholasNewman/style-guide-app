@@ -5,7 +5,9 @@ $primary-color: #005581;
 $border-color: #eaeaea;
 
 nav{
-  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+  z-index: 9;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
