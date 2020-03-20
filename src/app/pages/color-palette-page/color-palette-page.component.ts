@@ -8,6 +8,8 @@ import { SecondaryColorPalette } from '../../models/tabs-content/secondary-color
 })
 export class ColorPalettePageComponent implements OnInit {
 
+  copiedColorHex: string;
+
   primaryColorPalettes: PrimaryColorPalette[] = [
     {id: 1, displayName: 'Dark Cerulean', color: '#005581', textColor: 'white', subContentHeader: 'Usage ',
       subContent: 'Buttons, Headers, Labels', toolTip: '', display: true, order: 1,
@@ -78,9 +80,7 @@ export class ColorPalettePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-
-
+  // COPY COLOR TO USER CLIPBOARD
   copyHex(color: string){
     const selBox = document.createElement('textarea');
     selBox.style.position = 'fixed';
@@ -93,5 +93,10 @@ export class ColorPalettePageComponent implements OnInit {
     selBox.select();
     document.execCommand('copy');
     document.body.removeChild(selBox);
+
+    this.copiedColorHex = color;
+    setTimeout(() => {
+      this.copiedColorHex = '';
+    }, 2000);
   }
 }

@@ -26,6 +26,9 @@
             <h5 class="card-title">{{color.subContentHeader}}</h5>
             <p class="card-text">{{color.subContent}}</p>
           </div>
+          <div *ngIf="copiedColorHex === color.color"  class="card-copied-alert">
+            Copied!
+          </div>
         </div>
       </div>
     </div>
