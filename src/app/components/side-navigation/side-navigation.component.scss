@@ -11,8 +11,16 @@
 
 .content-container{
   width: 100%;
-  padding: 20px 80px;
+  padding: 0px 80px;
   overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  background: $primary-bg-color;
+  .tab-content{
+    max-width: 1140px;
+    padding: 20px 15px;
+    background: $tab-content-bg-color;
+  }
 }
 
 // NON-ACTIVE TAB

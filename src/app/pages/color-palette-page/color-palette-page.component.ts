@@ -8,7 +8,7 @@ import { PrimaryColorPalette } from '../../models/tabs-content/primary-color-pal
 export class ColorPalettePageComponent implements OnInit {
 
   primaryColorPalettes: PrimaryColorPalette[] = [
-    {id: 1, displayName: 'Deep Navy', color: '#005581', subContentHeader: 'Usage ',
+    {id: 1, displayName: 'Deep Navy', color: '#005581', textColor: 'white', subContentHeader: 'Usage ',
     subContent: 'Buttons, Headers, Labels', toolTip: '', display: true, order: 1,
     area: 'primary-color-palette', etc: ''
   }

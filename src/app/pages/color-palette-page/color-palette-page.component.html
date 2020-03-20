@@ -9,15 +9,14 @@
       secondary palette consists of brighter colors where specific content is emphasized.
     </p>
   </div>
-  <div class="container">
+  <div class="section-container container">
     <h5>Primary Color Palette</h5>
-    <div class="container">
+    <div class="sub-section-container container">
       <div *ngFor="let color of primaryColorPalettes">
         <div class="card card-dimension">
-          <div class="card-color-top" style="background: {{color.color}}">
-            <label>{{color.displayName}}</label>
-            <label>{{color.color}}</label>
-
+          <div class="card-color-top" style="background: {{color.color}}; color: {{color.textColor}}">
+            <div>{{color.displayName}}</div>
+            <div>{{color.color}}</div>
           </div>
           <div class="card-body">
             <h5 class="card-title">{{color.subContentHeader}}</h5>
@@ -27,7 +26,7 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="section-container container">
     <h5>Secondary Color Palette</h5>
   </div>
 </div>
